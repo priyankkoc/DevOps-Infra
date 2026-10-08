@@ -3,7 +3,8 @@ Terraform
 ============================================================
 Terraform working directory
 
-*.tfvars *.tfvars.json
+terraform.tfvars
+terraform.tfvars.example
 
 .terraform/
 

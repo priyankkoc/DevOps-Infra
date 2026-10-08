@@ -3,6 +3,8 @@ Terraform
 ============================================================
 Terraform working directory
 
+*.tfvars *.tfvars.json
+
 .terraform/
 
 Terraform state files
@@ -24,7 +26,7 @@ override.tf override.tf.json override.tf *_override.tf.json
 Terraform variable files containing secrets
 NOTE: Keep .tfvars tracked only if they contain no secrets.
 
-*.tfvars *.tfvars.json
+
 
 ============================================================
 Terraform Provider Lock File

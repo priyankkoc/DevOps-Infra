@@ -1,0 +1,105 @@
+============================================================
+Terraform
+============================================================
+Terraform working directory
+
+.terraform/
+
+Terraform state files
+
+.tfstate .tfstate.* *.tfstate.backup
+
+Terraform crash logs
+
+crash.log crash.*.log
+
+Terraform plan files
+
+.tfplan .plan
+
+Terraform override files
+
+override.tf override.tf.json override.tf *_override.tf.json
+
+Terraform variable files containing secrets
+NOTE: Keep .tfvars tracked only if they contain no secrets.
+
+*.tfvars *.tfvars.json
+
+============================================================
+Terraform Provider Lock File
+============================================================
+DO NOT ignore this file.
+.terraform.lock.hcl should normally be committed.
+
+#
+
+.terraform.lock.hcl
+============================================================
+Sensitive / Local Terraform Files
+============================================================
+Local Terraform CLI configuration
+
+.terraformrc terraform.rc
+
+Terraform plugin/cache directories
+
+.terraform.d/
+
+============================================================
+Environment / Secrets
+============================================================
+Environment variable files
+
+.env .env.* !.env.example
+
+Service account / credential files
+
+.json .key .pem .p12 .pfx .crt
+
+GCP credentials
+
+-credentials.json service-account*.json gcp-credentials.json
+
+============================================================
+OS Files
+============================================================
+
+.DS_Store Thumbs.db desktop.ini
+
+Linux temporary files
+
+~ .swp *.swo
+
+============================================================
+Editor / IDE
+============================================================
+VS Code
+
+.vscode/* !.vscode/settings.json !.vscode/extensions.json !.vscode/tasks.json !.vscode/launch.json
+
+JetBrains
+
+.idea/ *.iml
+
+Vim
+
+*.vimrc.local
+
+============================================================
+Logs
+============================================================
+
+*.log logs/
+
+============================================================
+Temporary / Backup Files
+============================================================
+
+.tmp .temp .bak .backup
+
+============================================================
+Build / Generated Files
+============================================================
+
+dist/ build/ out/ tmp/ temp/ cache/ .cache/ EOF

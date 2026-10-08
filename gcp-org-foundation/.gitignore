@@ -24,7 +24,7 @@ override.tf override.tf.json override.tf *_override.tf.json
 Terraform variable files containing secrets
 NOTE: Keep .tfvars tracked only if they contain no secrets.
 
-.tfvars .tfvars.json
+*.tfvars *.tfvars.json
 
 ============================================================
 Terraform Provider Lock File

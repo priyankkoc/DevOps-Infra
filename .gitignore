@@ -3,11 +3,11 @@ Terraform
 ============================================================
 Terraform working directory
 
-terraform.tfvars
-terraform.tfvars.example
+/envs/
 
 .terraform/
 
+.
 Terraform state files
 
 .tfstate .tfstate.* *.tfstate.backup

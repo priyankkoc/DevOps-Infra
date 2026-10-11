@@ -17,24 +17,18 @@ variable "sub_folders" {
     description = "A map of sub-folders to create. Each key is the sub-folder name, and the value is an object containing the display name and parent folder key."
     type = set(string)
 }
-variable "display_name" {
-    description = "The display name for the project."
-    type        = string
+
+variable "projects" {
+    description = "A list of project configurations to create. Each project is an object containing project_id, display_name, folder_id, billing_account, and apis."
+    type = map(object({
+        name     = string
+        project_id = string
+        folder_id    = string
+        billing_account = string
+        auto_create_network = bool
+    }))
 }
-variable "project_id" {
-    description = "The unique project ID for the GCP project."
-    type        = string
-}
-variable "folder_id" {
-    description = "The numeric ID of the parent folder where the project will be created."
-    type        = string
-}
-variable "billing_account" {
-    description = "The billing account ID to link the project to."
-    type        = string
-}
-variable "apis" {
-    description = "A list of service APIs to enable on the project."
+variable "services" {
+    description = "A list of services to enable for each project."
     type        = list(string)
-    default     = []
 }

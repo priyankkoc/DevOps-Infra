@@ -28,18 +28,3 @@ variable "apis" {
   type        = list(string)
   default     = []
 }
-
-variable "labels" {
-  description = "Additional labels merged on top of the standard set."
-  type        = map(string)
-  default     = {}
-}
-
-variable "iam_bindings" {
-  description = "Map of IAM bindings to apply, e.g. { admins = { role = \"roles/owner\", member = \"group:team@company.com\" } }."
-  type = map(object({
-    role   = string
-    member = string
-  }))
-  default = {}
-}

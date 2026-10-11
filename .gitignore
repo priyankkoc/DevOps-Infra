@@ -3,7 +3,7 @@ Terraform
 ============================================================
 Terraform working directory
 
-/envs/
+envs/
 
 .terraform/
 

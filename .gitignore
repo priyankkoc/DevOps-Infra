@@ -13,6 +13,7 @@ Terraform state files
 .tfstate.* 
 *.tfstate.backup
 
+tfstate/
 Terraform crash logs
 
 crash.log crash.*.log

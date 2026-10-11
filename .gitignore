@@ -7,10 +7,9 @@ envs/
 
 .terraform/
 
-.
 Terraform state files
 
-.tfstate .tfstate.* *.tfstate.backup
+*.tfstate .tfstate.* *.tfstate.backup
 
 Terraform crash logs
 

@@ -1,19 +1,3 @@
-/**
- * PROJECT FACTORY MODULE
- * -----------------------
- * Creates one GCP project under a given folder, enables the requested APIs,
- * links billing, and applies standard labels + optional IAM bindings.
- * Called once per entry in the root `projects` map via for_each.
- */
-
-terraform {
-  required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "~> 5.30"
-    }
-  }
-}
 
 resource "google_project" "this" {
   name                = var.display_name

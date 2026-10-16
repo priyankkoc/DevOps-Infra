@@ -12,7 +12,9 @@ Terraform state files
 *.tfstate 
 .tfstate.* 
 *.tfstate.backup
-
+*.tar.gz
+*.txt
+build/
 tfstate/
 Terraform crash logs
 

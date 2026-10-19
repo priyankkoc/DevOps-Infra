@@ -4,6 +4,7 @@ Terraform
 Terraform working directory
 
 *.tar.gz
+scripts/go/
 gcp-terraform/
 keda/
 terraform.tfvars

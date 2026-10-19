@@ -3,6 +3,9 @@ Terraform
 ============================================================
 Terraform working directory
 
+*.tar.gz
+gcp-terraform/
+keda/
 terraform.tfvars
 terraform.tfvars.example
 
